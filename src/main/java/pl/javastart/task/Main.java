@@ -8,8 +8,19 @@ public class Main {
     // poniżej przykładowe wydruki
     // to zadanie ma dostępne testy jednostkowe w src/test/java/[...]/BubbleSortTest
     public static void main(String[] args) {
-        sortAndPrintInfo(1, 2, 3);
-        sortAndPrintInfo(5, 2, 1);
+        int[] tab1 = new int[99];
+        for (int i = 0; i < tab1.length; i++) {
+            tab1[i] = i + 1;
+        }
+        int[] tab2 = new int[99];
+        for (int i = 0; i < tab2.length; i++) {
+            tab2[i] = 99 - i;
+        }
+        sortAndPrintInfo(1, 2, 3, 4, 5);
+        sortAndPrintInfo(5, 4, 3, 2, 1);
+        sortAndPrintInfo(tab1);
+        sortAndPrintInfo(tab2);
+        sortAndPrintInfo(5, 2, 3, 1, 4);
     }
 
     private static void sortAndPrintInfo(int... arrayToSort) {
