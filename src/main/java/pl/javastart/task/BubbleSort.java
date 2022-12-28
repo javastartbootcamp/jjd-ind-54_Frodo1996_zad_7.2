@@ -6,7 +6,7 @@ public class BubbleSort {
     public static int sort(int[] inputArray) {
 
         int compares = 0;
-        boolean itIs = false;
+//        boolean itIs = false;
 
         for (int i = 0; i < inputArray.length - 1; i++) {
             for (int j = 0; j < inputArray.length - 1 - i; j++) {
@@ -15,12 +15,12 @@ public class BubbleSort {
                     int temp = inputArray[j];
                     inputArray[j] = inputArray[j + 1];
                     inputArray[j + 1] = temp;
-                    itIs = true;
+//                    itIs = true;
                 }
             }
-            if (!itIs) {
-                break;
-            }
+//            if (!itIs) {
+//                break;
+//            }
         }
         return compares;
     }
